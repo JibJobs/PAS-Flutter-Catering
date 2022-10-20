@@ -24,7 +24,7 @@ class StartState extends State<LoginScreen> {
                 borderRadius: BorderRadius.only(bottomLeft: Radius.circular(90)),
                 color: Color(0xff367e18),
                 gradient: LinearGradient(colors: [( Color(0xff367e18)), Color(
-                    0xff7cd256)],
+                    0xff326518)],
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                 ),
@@ -38,8 +38,8 @@ class StartState extends State<LoginScreen> {
                         margin: EdgeInsets.only(top: 50),
                         child: Image.asset(
                           "Image/logoapp.png",
-                          height: 90,
-                          width: 90,
+                          height: 150,
+                          width: 150,
                         ),
                       ),
                       Container(

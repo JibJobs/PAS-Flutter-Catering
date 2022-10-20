@@ -20,7 +20,7 @@ class InitState extends State<SignUpScreen> {
                     borderRadius: BorderRadius.only(bottomLeft: Radius.circular(90)),
                     color: Color(0xff367e18),
                     gradient: LinearGradient(colors: [(Color(0xff367e18)), Color(
-                        0xff7cd256)],
+                        0xff326518)],
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                     ),
@@ -31,15 +31,15 @@ class InitState extends State<SignUpScreen> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Container(
-                            margin: EdgeInsets.only(top: 50),
+                            margin: EdgeInsets.only(top: 40),
                             child: Image.asset(
-                              "images/app_logo.png",
-                              height: 90,
-                              width: 90,
+                              "Image/logoapp.png",
+                              height: 150,
+                              width: 150,
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.only(right: 20, top: 20),
+                            margin: EdgeInsets.only(right: 20, top: 0),
                             alignment: Alignment.bottomRight,
                             child: Text(
                               "Register",

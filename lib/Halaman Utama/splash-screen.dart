@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:pas_flutter_mcnmsi_appcatering/Halaman%20Utama/login_screen.dart';
 // import '../../../untitled1/lib/Copasan/login_screen.dart';
 
 class splashscreen extends StatefulWidget {
@@ -22,7 +23,7 @@ class _splashscreenState extends State<splashscreen> {
     var duration = const Duration(seconds: 5);
     return Timer(duration, () {
       Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_) {
-        return splashscreen();
+        return LoginScreen();
       }));
     });
   }

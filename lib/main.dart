@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pas_flutter_mcnmsi_appcatering/Halaman%20Utama/splash-screen.dart';
+import 'package:pas_flutter_mcnmsi_appcatering/SplashScreen/splash-screen.dart';
 
 void main() {
   runApp(const MyApp());

@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:pas_flutter_mcnmsi_appcatering/Halaman%20Utama/login_screen.dart';
+import 'package:pas_flutter_mcnmsi_appcatering/Login%20dan%20Register/login_screen.dart';
 // import '../../../untitled1/lib/Copasan/login_screen.dart';
 
 class splashscreen extends StatefulWidget {

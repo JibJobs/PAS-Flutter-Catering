@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-// import '../../../untitled1/lib/Copasan/login_screen.dart';
 
 class splashscreen extends StatefulWidget {
   const splashscreen({Key? key}) : super(key: key);
@@ -14,39 +13,32 @@ class _splashscreenState extends State<splashscreen> {
   @override
   void initState() {
     super.initState();
-    timerSS();
-  }
-
-  //timer
-  timerSS() async {
-    var duration = const Duration(seconds: 5);
-    return Timer(duration, () {
-      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_) {
-        return splashscreen();
-      }));
+    Timer(Duration(seconds: 2), () {
+      Navigator.pushReplacement(context, MaterialPageRoute(
+        builder: (context) {
+          return splashscreen();
+        },
+      ));
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Color.fromARGB(255, 54, 126, 24),
-      body: Center(
-          child: Column(
-            children: [
-              Container(
-                margin: EdgeInsets.only(top: 200),
-                child: Image.asset(
-                  "Image/depanlogo.png",
-                  height: 200,
-                  width: 200,
-                ),
-              )
-
-          ]),
-
-    )
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        body: Container(
+          color: Colors.white,
+          child: Center(
+            child: Image(
+              width: 240,
+              height: 240,
+              image: AssetImage("lib/asset/logo.png"),
+              // repeat: ImageRepeat.repeat,
+            ),
+          ),
+        ),
+      ),
     );
   }
-
 }
